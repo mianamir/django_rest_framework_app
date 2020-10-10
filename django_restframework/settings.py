@@ -115,5 +115,8 @@ STATIC_URL = '/static/'
 # wRITE GLOBAL PERMISSIONS HERE
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': 
-        ('rest_framework.permissions.IsAuthenticatedOrReadOnly', ) # AllowAny (default permissions)
+        ('rest_framework.permissions.IsAuthenticatedOrReadOnly', ), # AllowAny (default permissions)
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
 }
