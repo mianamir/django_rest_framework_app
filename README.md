@@ -1,5 +1,4 @@
-# Django REST Framework, Build REST API With Django
-
+# Build REST API's Using Django REST Framework(DRF)
 <br/>Serializer
 <br/>Modal Serializer
 <br/>Function Based API
