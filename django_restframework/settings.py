@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'languages',
     'function_based_api',
+    'api_view_decorator_based_apis',
 ]
 
 MIDDLEWARE = [
