@@ -1,0 +1,22 @@
+from articles.models import Article
+from articles.serializers import ArticleSerializer
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
+artilcle = Article(title = "Java Programming", author = "Amir Savvy", email = "test@test.com")
+artilcle.save()
+artilcle = Article(title = "Python Programming", author = "Savvy", email = "python@test.com")
+artilcle.save()
+artilcle = Article(title = "Elixir Programming", author = "Savvy", email = "elixir@test.com")
+artilcle.save()
+serializer = ArticleSerializer(artilcle)
+serializer.data
+import readline
+readline.write_history_file('/home/savvy/Desktop/json_parser.txt')
+serializer.data
+content = JSONRenderer().render(serializer)
+content = JSONRenderer().render(serializer.data)
+content
+serializer = ArticleSerializer(Artilcle.objects.all(), many=True)
+serializer = ArticleSerializer(Article.objects.all(), many=True)
+serializer.data
+readline.write_history_file('/home/savvy/Desktop/json_parser.txt')

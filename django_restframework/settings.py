@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    'languages'
+    'languages',
+    'function_based_api',
 ]
 
 MIDDLEWARE = [
@@ -113,10 +114,10 @@ STATIC_URL = '/static/'
 
 
 # wRITE GLOBAL PERMISSIONS HERE
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': 
-        ('rest_framework.permissions.IsAuthenticatedOrReadOnly', ), # AllowAny (default permissions)
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES':
+#         ('rest_framework.permissions.IsAuthenticatedOrReadOnly', ), # AllowAny (default permissions)
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework_simplejwt.authentication.JWTAuthentication',
+#     )
+# }
