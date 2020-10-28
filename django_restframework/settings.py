@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'languages',
     'function_based_api',
     'api_view_decorator_based_apis',
-    'class_based_views_apis'
+    'class_based_views_apis',
+    'generic_views_with_mixins_apis'
 ]
 
 MIDDLEWARE = [
